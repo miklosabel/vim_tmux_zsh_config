@@ -111,10 +111,18 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
-alias sertes='cd ~/enco/sertes/PigBrotherEngine/src/python/neural_network/pig_id_recognition/'
-alias beszed='cd /home/miklos/enco/sertes/Verbatum_beszedfelimero_Git/med_asr/ba-dls-deepspeech-master/'
-alias doc='cd /home/miklos/enco/sertes/Documentation/Project/WorkSummary/miklos.abel'
+alias sertes='cd /media/veracrypt1/enco/sertes/PigBrotherEngine/src/python/neural_network/pig_id_recognition/'
+alias beszed='cd /media/veracrypt1/enco/sertes/Verbatum_beszedfelimero_Git/med_asr/ba-dls-deepspeech-master/'
+alias doc='cd /media/veracrypt1/enco/sertes/Documentation/Project/WorkSummary/miklos.abel'
 alias lib='cd /home/miklos/.local/lib/python3.6/site-packages'
+alias vera='cd /media/veracrypt1/hello/retrain-tesseract/'
 function cdl { cd $1; l;}
 function cdla { cd $1; la;}
+function swap 
+{
+    local TMPFILE=tmp.$$
+    sudo mv "$1" $TMPFILE
+    sudo mv "$2" "$1"
+    sudo mv $TMPFILE "$2"
+}
 alias tmux="TERM=screen-256color-bce tmux"

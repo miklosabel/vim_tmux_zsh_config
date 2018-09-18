@@ -20,6 +20,7 @@ Plugin 'Townk/vim-autoclose'       " automatically close characters.
 Plugin 'tomtom/tcomment_vim'       " line comment, block comment
 Plugin 'tpope/vim-unimpaired'       "commentary
 Plugin 'lervag/vimtex'              "latex plugin for vim
+Plugin 'LucHermitte/VimFold4C'     "folding plugin for C and C++
 
 "Themes
 Plugin 'sonph/onehalf', {'rtp': 'vim/'} 
@@ -216,3 +217,15 @@ let g:pymode_syntax_builtin_objs=g:pymode_syntax_all
 let g:pymode_syntax_builtin_types=g:pymode_syntax_all
 let g:pymode_syntax_highlight_exceptions=g:pymode_syntax_all
 let g:pymode_syntax_docstrings=g:pymode_syntax_all
+
+let b:fold_options = {
+    \ 'fold_blank': 1,
+    \ 'fold_includes': 1,
+    \ 'ignored_doxygen_fields': ['class', 'ingroup', 'function', 'def', 'defgroup', 'exception', 'headerfile', 'namespace', 'property', 'fn', 'var'],
+    \ 'max_foldline_length': 'win',
+    \ 'merge_comments': 1,
+    \ 'show_if_and_else': 1,
+    \ 'strip_namespaces': 1,
+    \ 'strip_template_arguments': 1,
+    \ }
+
