@@ -21,6 +21,7 @@ Plugin 'tomtom/tcomment_vim'       " line comment, block comment
 Plugin 'tpope/vim-unimpaired'       "commentary
 Plugin 'lervag/vimtex'              "latex plugin for vim
 Plugin 'LucHermitte/VimFold4C'     "folding plugin for C and C++
+Plugin 'WolfgangMehner/bash-support'
 
 "Themes
 Plugin 'sonph/onehalf', {'rtp': 'vim/'} 
@@ -31,6 +32,9 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
 syntax on 
 
 "show line numbers
