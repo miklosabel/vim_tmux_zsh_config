@@ -31,7 +31,13 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
 syntax on 
+
+"capital w to save
+command! W write
 
 "show line numbers
 set number
