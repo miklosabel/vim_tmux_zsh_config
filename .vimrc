@@ -21,6 +21,7 @@ Plugin 'tomtom/tcomment_vim'       " line comment, block comment
 Plugin 'tpope/vim-unimpaired'       "commentary
 Plugin 'lervag/vimtex'              "latex plugin for vim
 Plugin 'LucHermitte/VimFold4C'     "folding plugin for C and C++
+Plugin 'WolfgangMehner/bash-support'
 
 "Themes
 Plugin 'sonph/onehalf', {'rtp': 'vim/'} 

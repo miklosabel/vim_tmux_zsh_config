@@ -115,7 +115,10 @@ alias sertes='cd /media/veracrypt1/enco/sertes/PigBrotherEngine/src/python/neura
 alias beszed='cd /media/veracrypt1/enco/sertes/Verbatum_beszedfelimero_Git/med_asr/ba-dls-deepspeech-master/'
 alias doc='cd /media/veracrypt1/enco/sertes/Documentation/Project/WorkSummary/miklos.abel'
 alias lib='cd /home/miklos/.local/lib/python3.6/site-packages'
-alias vera='cd /media/veracrypt1/hello/retrain-tesseract/'
+# alias vera='cd /media/veracrypt1/hello/retrain-tesseract/'
+alias annoscript='cd /media/veracrypt1/enco/sertes/PigBrotherEngine/src/python/common/util'
+alias photos='cd /mnt/encosoft/Y/miklos.abel/annotate'
+alias annotations='cd /mnt/encosoft/X/sertesszamlalo/Photos/Annotations/miklos.abel'
 function cdl { cd $1; l;}
 function cdla { cd $1; la;}
 function swap 
