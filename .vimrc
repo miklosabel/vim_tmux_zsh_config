@@ -40,6 +40,9 @@ syntax on
 "capital w to save
 command! W write
 
+"capital Q to quit
+command! Q quit
+
 "show line numbers
 set number
 set ruler
