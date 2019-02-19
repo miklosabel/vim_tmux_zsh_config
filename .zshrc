@@ -91,6 +91,7 @@ export PYTHONPATH="${PYTHONPATH}:/home/miklos/.vim/bundle/ropevim"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -111,12 +112,11 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
-alias sertes='cd /media/veracrypt1/enco/sertes/PigBrotherEngine/src/python/neural_network/pig_id_recognition/'
-alias beszed='cd /media/veracrypt1/enco/sertes/Verbatum_beszedfelimero_Git/med_asr/ba-dls-deepspeech-master/'
-alias doc='cd /media/veracrypt1/enco/sertes/Documentation/Project/WorkSummary/miklos.abel'
-alias lib='cd /home/miklos/.local/lib/python3.6/site-packages'
+alias sertes='cd /home/miklos.abel/encosoft/PigBrotherEngine/src/python/neural_network/weight_summation_on_image/'
+alias doc='cd /home/miklos.abel/encosoft/Documentation/Project/WorkSummary/miklos.abel'
+alias lib='cd /home/miklos.abel/.local/lib/python3.6/site-packages'
 # alias vera='cd /media/veracrypt1/hello/retrain-tesseract/'
-alias annoscript='cd /media/veracrypt1/enco/sertes/PigBrotherEngine/src/python/common/util'
+alias annoscript='cd /home/miklos.abel/encosoft/PigBrotherEngine/src/python/common/util'
 alias photos='cd /mnt/encosoft/Y/miklos.abel/annotate'
 alias annotations='cd /mnt/encosoft/X/sertesszamlalo/Photos/Annotations/miklos.abel'
 function cdl { cd $1; l;}
@@ -129,3 +129,21 @@ function swap
     sudo mv $TMPFILE "$2"
 }
 alias tmux="TERM=screen-256color-bce tmux"
+ca () {conda activate $1;}
+#
+# added by Anaconda3 2018.12 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/miklos.abel/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/home/miklos.abel/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/miklos.abel/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/home/miklos.abel/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<

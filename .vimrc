@@ -31,6 +31,8 @@ call vundle#end()
 execute pathogen#infect()
 execute pathogen#helptags()
 
+set guifont=Monospace:h12
+
 filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
