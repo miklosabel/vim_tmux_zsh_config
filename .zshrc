@@ -64,7 +64,10 @@ plugins=(
   vagrant
   colored-man-pages
   command-not-found
-	  vi-mode
+  vi-mode
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -116,9 +119,8 @@ alias sertes='cd /home/miklos.abel/encosoft/PigBrotherEngine/src/python/neural_n
 alias doc='cd /home/miklos.abel/encosoft/Documentation/Project/WorkSummary/miklos.abel'
 alias lib='cd /home/miklos.abel/.local/lib/python3.6/site-packages'
 # alias vera='cd /media/veracrypt1/hello/retrain-tesseract/'
-alias annoscript='cd /home/miklos.abel/encosoft/PigBrotherEngine/src/python/common/util'
-alias photos='cd /mnt/encosoft/Y/miklos.abel/annotate'
-alias annotations='cd /mnt/encosoft/X/sertesszamlalo/Photos/Annotations/miklos.abel'
+alias annoscript='cd /home/miklos.abel/encosoft/PigBrotherEngine/src/python/scripts'
+alias mrcnnres='cd /home/miklos.abel/mount/Y/miklos.abel/mrcnn_results'
 function cdl { cd $1; l;}
 function cdla { cd $1; la;}
 function swap 
@@ -147,3 +149,5 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
+export ENCO_X_LOCATION="/home/miklos.abel/mount/X"
+export ENCO_Y_LOCATION="/home/miklos.abel/mount/Y"
