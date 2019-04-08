@@ -149,5 +149,6 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
-export ENCO_X_LOCATION="/home/miklos.abel/mount/X"
-export ENCO_Y_LOCATION="/home/miklos.abel/mount/Y"
+. /home/nemlajos/anaconda3/etc/profile.d/conda.sh
+export SUMO_HOME=$HOME/sumo_binaries/bin
+export PYTHONPATH="$HOME/flow:$PYTHONPATH"

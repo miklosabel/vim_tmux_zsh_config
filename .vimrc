@@ -24,7 +24,8 @@ Plugin 'LucHermitte/VimFold4C'     "folding plugin for C and C++
 Plugin 'WolfgangMehner/bash-support'
 
 "Themes
-Plugin 'sonph/onehalf', {'rtp': 'vim/'} 
+" Plugin 'sainnhe/vim-color-forest-night'
+Plugin 'yous/vim-open-color'
 
 call vundle#end()
 
@@ -157,7 +158,7 @@ set encoding=utf-8
 set background=dark
 set t_Co=256
 
-colorscheme onehalfdark
+colorscheme open-color
 
 " Jedi completion
 " let g:jedi#auto_initialization=1
