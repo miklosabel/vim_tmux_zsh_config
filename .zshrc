@@ -58,6 +58,7 @@ ZSH_THEME="muse"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(
   git
   extract
@@ -67,7 +68,8 @@ plugins=(
   vi-mode
   zsh-syntax-highlighting
   zsh-autosuggestions
-  history-substring-search
+  zsh-history-substring-search
+  zsh-completions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -115,12 +117,14 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
-alias sertes='cd /home/miklos.abel/encosoft/PigBrotherEngine/src/python/neural_network/weight_summation_on_image/'
+alias sertes='cd /home/miklos.abel/encosoft/PigBrotherEngine/src/python/image_processing/detection/colour_filtering'
+alias pigroot='cd /home/miklos.abel/encosoft/PigBrotherEngine/src/python'
 alias doc='cd /home/miklos.abel/encosoft/Documentation/Project/WorkSummary/miklos.abel'
 alias lib='cd /home/miklos.abel/.local/lib/python3.6/site-packages'
 # alias vera='cd /media/veracrypt1/hello/retrain-tesseract/'
 alias annoscript='cd /home/miklos.abel/encosoft/PigBrotherEngine/src/python/scripts'
 alias mrcnnres='cd /home/miklos.abel/mount/Y/miklos.abel/mrcnn_results'
+alias sup='cd /home/miklos.abel/encosoft/support'
 function cdl { cd $1; l;}
 function cdla { cd $1; la;}
 function swap 
@@ -132,23 +136,8 @@ function swap
 }
 alias tmux="TERM=screen-256color-bce tmux"
 ca () {conda activate $1;}
-#
-# added by Anaconda3 2018.12 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/miklos.abel/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/home/miklos.abel/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/miklos.abel/anaconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/home/miklos.abel/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
-. /home/nemlajos/anaconda3/etc/profile.d/conda.sh
+
 export SUMO_HOME=$HOME/sumo_binaries/bin
 export PYTHONPATH="$HOME/flow:$PYTHONPATH"
+export ENCO_X_LOCATION="$HOME/mount/X"
+export ENCO_Y_LOCATION="$HOME/mount/Y"
