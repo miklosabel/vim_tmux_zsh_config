@@ -58,9 +58,7 @@ if [[ -f ${repo_dir}/.zshrc ]]; then
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
     cp ${repo_dir}/.zshrc ~
-
-    echo "command -v zsh | sudo tee -a /etc/shells"
-    sudo chsh -s "$(command -v zsh)" "${USER}"
+    cat ${repo_dir}/.bashrc_start_zsh > ~/.bashrc
 else
     echo "Vim config file does not exist in the repo"
 fi
