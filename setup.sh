@@ -28,17 +28,18 @@ repo_dir=~/.setup_my_config
 echo "################
 Installing prerequisites
 "
-sudo apt install wget curl git
+sudo apt install wget curl 
+# sudo apt install git
 
 
-echo "################
-Cloning config repo from github.com/miklosabel
-"
-if [[ -f ${repo_dir} ]]; then
-    echo "Creating repo directory"
-    mkdir ${repo_dir}
-fi
-git clone https://github.com/miklosabel/setup_linux_config.git ${repo_dir}
+# echo "################
+# Cloning config repo from github.com/miklosabel
+# "
+# if [[ -f ${repo_dir} ]]; then
+#     echo "Creating repo directory"
+#     mkdir ${repo_dir}
+# fi
+# git clone https://github.com/miklosabel/setup_linux_config.git ${repo_dir}
 
 
 echo "################
