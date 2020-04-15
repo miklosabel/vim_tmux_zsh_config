@@ -1,5 +1,9 @@
-# My vim, tmux, zsh configuration
+# My vim, tmux, zsh, i3 configuration
 
-Jedi, python-mode, onehalf installation needed
+Install i3blocks.
+Clone i3blocks-contrib to i3 directory.
+Install i3lock.
+
+
 
 
