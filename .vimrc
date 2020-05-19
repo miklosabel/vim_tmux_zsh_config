@@ -5,6 +5,10 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 set rtp^=~/.vim/bundle/ctrlp.vim
 
+"install vundle : cd ~ && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"install pathogen: cd ~ && mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
@@ -158,86 +162,3 @@ set background=dark
 set t_Co=256
 
 colorscheme onehalfdark
-
-" Jedi completion
-" let g:jedi#auto_initialization=1
-" let g:jedi#auto_vim_configuration=1
-" let g:jedi#use_tabs_not_buffers=1
-" let g:jedi#popup_on_dot=1
-" let g:jedi#show_call_signatures="1"
-let g:jedi#goto_command="<leader>g"
-let g:jedi#goto_definitions_command="<leader>gd"
-let g:jedi#usages_command="<leader>gn"
-" let g:jedi#completions_command="<leader>Space"
-let g:jedi#rename_command="<leader>rr"
-
-" " Pymode plugins
-let g:pymode=1
-let g:pymode_warnings=1
-let g:pymode_paths=[]
-let g:pymode_trim_whitespaces=1
-let g:pymode_options=1 	" emiatt van format
-
-let g:pymode_quickfix_minheight=3
-let g:pymode_quickfix_maxheight=6
-
-let g:pymode_python='python3'
-
-let g:pymode_indent=1
-
-" let g:pymode_folding=1
-" vim motion dolgok
-let g:pymode_motion=1
-
-let g:pymode_doc=1 "show documentation for current word
-let g:pymode_doc_bind='K'
-
-let g:pymode_rope=0
-"
-" Code checking
-let g:pymode_lint=1
-let g:pymode_lint_on_write=1
-let g:pymode_lint_on_fly=0
-let g:pymode_lint_message=1
-let g:pymode_lint_checkers=['pyflakes', 'pep8', 'pylint']
-let g:pymode_lint_cwindow=1  " TODO should check this 
-
-let g:pymode_signs=1
-let g:pymode_lint_todo_symbol = 'WW'
-let g:pymode_lint_comment_symbol = 'CC'
-let g:pymode_lint_visual_symbol = 'RR'
-let g:pymode_lint_error_symbol = 'EE'
-let g:pymode_lint_info_symbol = 'II'
-let g:pymode_lint_pyflakes_symbol = 'FF'
-
-" pymode syntax
-let g:pymode_syntax=0
-let g:pymode_syntax_all=1
-let g:pymode_syntax_print_as_function=0
-let g:python_syntax_hightlight_equal_operator=g:pymode_syntax_all
-let g:python_syntax_hightlight_stars_operator=g:pymode_syntax_all
-let g:python_syntax_hightlight_self=g:pymode_syntax_all
-let g:python_syntax_indent_errors=g:pymode_syntax_all
-let g:python_syntax_space_errors=g:pymode_syntax_all
-
-let g:pymode_syntax_string_formatting = g:pymode_syntax_all
-let g:pymode_syntax_string_format = g:pymode_syntax_all
-let g:pymode_syntax_string_templates = g:pymode_syntax_all
-let g:pymode_syntax_doctests = g:pymode_syntax_all
-
-let g:pymode_syntax_builtin_objs=g:pymode_syntax_all
-let g:pymode_syntax_builtin_types=g:pymode_syntax_all
-let g:pymode_syntax_highlight_exceptions=g:pymode_syntax_all
-let g:pymode_syntax_docstrings=g:pymode_syntax_all
-
-let b:fold_options = {
-    \ 'fold_blank': 1,
-    \ 'fold_includes': 1,
-    \ 'ignored_doxygen_fields': ['class', 'ingroup', 'function', 'def', 'defgroup', 'exception', 'headerfile', 'namespace', 'property', 'fn', 'var'],
-    \ 'max_foldline_length': 'win',
-    \ 'merge_comments': 1,
-    \ 'show_if_and_else': 1,
-    \ 'strip_namespaces': 1,
-    \ 'strip_template_arguments': 1,
-    \ }
-
