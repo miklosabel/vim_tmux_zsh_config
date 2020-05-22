@@ -16,7 +16,6 @@ Plugin 'scrooloose/nerdtree'      "  nerdtree tab
 Plugin 'vim-airline'
 Plugin 'tpope/vim-surround'        " surroundings: {, (, quotes, HTML tags closer
 Plugin 'majutsushi/tagbar'         " tableofcontents, functions, etc
-Plugin 'python-mode/python-mode'
 Plugin 'davidhalter/jedi-vim' 	   " Completion
 
 Plugin 'gilsondev/searchtasks.vim' " TODO, FIXME, XXX
@@ -161,4 +160,4 @@ set encoding=utf-8
 set background=dark
 set t_Co=256
 
-colorscheme onehalfdark
+colorscheme torte
