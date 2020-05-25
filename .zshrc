@@ -117,6 +117,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
+alias qqq='exit'
 function cdl { cd $1; l;}
 function cdla { cd $1; la;}
 function swap 
