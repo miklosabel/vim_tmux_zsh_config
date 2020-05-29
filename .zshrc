@@ -127,7 +127,7 @@ function swap
     sudo mv "$2" "$1"
     sudo mv $TMPFILE "$2"
 }
-alias tmux="TERM=screen-256color-bce tmux"
+# alias tmux="TERM=screen-256color-bce tmux"
 # ca () {conda activate $1;}
 
 #	
